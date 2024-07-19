@@ -1,0 +1,77 @@
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+      "hd"
+      "feat"
+      "main"
+      "ft";
+}
+
+.feature {
+  grid-area: feat;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.125rem;
+}
+
+.titlepost {
+  color: #f0f0f0;
+}
+
+article {
+  padding: 3.125rem;
+  background-color: #f0f0f0;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.25rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.avtarimg {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  margin-right: 0.625rem;
+}
+
+.author-name,
+.post-date {
+  margin: 0 0.625rem;
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.post-content .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-content .col {
+  flex: 1;
+  padding: 0.625rem;
+}
+
+.imgfood {
+  width: 45%;
+  height: 11.875rem;
+  border-radius: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.imgpost {
+  width: 100%;
+}

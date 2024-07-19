@@ -1,0 +1,195 @@
+.home {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+}
+
+.box {
+    padding: initial;
+    background-color: #8bddbb;
+}
+
+.header {
+    grid-area: hd;
+    background-color: #00894f;
+}
+
+.footer {
+    grid-area: ft;
+    width: 100%;
+    height: fit-content;
+}
+
+.content {
+    grid-area: main;
+    padding: 1.25rem;
+}
+
+.navbar {
+    width: 85%;
+    height: 25%;
+}
+
+.logo {
+    width: 7.5rem;
+}
+
+#row1 {
+    background-image: linear-gradient(rgba(0.5, 0.5, 0.5, 0.5), #8bddbb), url(../assets/logo/food-blog.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 21.875rem;
+    align-items: center;
+    padding: 7rem 1.25rem;
+    grid-template-columns: 50% 50%;
+}
+
+.title {
+    padding: 1rem 12.5rem;
+}
+
+#Title {
+    font-size: 4.5rem;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.img {
+    width: 70%;
+    height: 20%;
+}
+
+.nestedGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20.3125rem;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 1.25rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #00894f;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    color: #f0f0f0;
+}
+
+.btn:hover {
+    color: #41d195;
+    background-color: #f0f0f0;
+}
+
+.card:hover {
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardimg {
+    width: 100%;
+    height: 12.5rem;
+}
+
+.row2 {
+    padding: 0.625rem;
+}
+
+.row3 {
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.625rem 1.875rem;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+    background-color: #f9f9f9;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.625rem;
+    margin: 1.25rem;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.comment-box {
+    width: 100%;
+    max-width: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #ccc;
+    font-size: 1em;
+    margin-bottom: 0.625rem;
+    resize: vertical;
+    min-height: 6.25rem;
+}
+
+@media (max-width: 320px) {
+    .title {
+        padding: 0.3125rem;
+    }
+    #Title {
+        font-size: 2rem;
+    }
+    .navbar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .title {
+        padding: 0.625rem 0.9375rem;
+    }
+    #Title {
+        font-size: 3rem;
+    }
+    .navbar {
+        width: 90%;
+    }
+}
+
+@media (min-width: 901px) {
+    .title {
+        padding: 1rem 12.5rem;
+    }
+    #Title {
+        font-size: 4.5rem;
+    }
+    .navbar {
+        width: 85%;
+    }
+}
